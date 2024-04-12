@@ -46,5 +46,55 @@ while escolha == escolha2:
         elif (jogador == 1 and computador == 3) or (jogador == 2 and computador == 1) or (jogador == 3 and computador ==2):
                 print("Você venceu!!")
         else:
-                print("Você perdeu!")
+            print("Você perdeu!")
+############################## COMPUTADOR X COMPUTADOR ############################################################
 
+opcoes = ("pedra", "papel", "tesoura")
+pontosComputador1 = 0
+pontosComputador2 = 0
+while True:
+    if opcao == "3":
+        print("\nModo: Computador vs Computador")
+    computador1 = random.randint(1, 4)
+    computador2 = random.randint(1, 4)
+
+    if computador1 == 1:
+        print("Jogada do Computador 1: Pedra")
+    elif computador1 == 2:
+        print("Jogada do Computador 1: Papel")
+    elif computador1 == 3:
+        print("Jogada do Computador 1: Tesoura")
+
+    if computador2 == 1:
+        print("Jogada do Computador 2: Pedra")
+    elif computador2 == 2:
+        print("Jogada do Computador 2: Papel")
+    elif computador2 == 3:
+        print("Jogada do Computador 2: Tesoura")
+
+#1 pedra
+#2 papel
+#3 tesoura
+
+    if computador1 == computador2:
+        print("Empate!")
+    elif (computador1 == 1 and computador2 == 3) or \
+            (computador1 == 3 and computador2 == 2) or  \
+            (computador1 == 2 and computador2 == 1):
+            print("Computador 1 ganhou!")
+            pontosComputador1 += 1
+            #somar um no placar do pc 1
+    else:
+        print("Computador 2 ganhou")
+        pontosComputador2 +=1
+    x = input("Voce deseja continuar a jogar?")
+    if x == "Sim" or x == "sim":
+        continue
+    y = input("Deseja ver o placar do jogo?")
+    if y == "Sim" or y == "sim":
+        print("Placar")
+        print("Computador 1:", pontosComputador1)
+        print("Computador 2:", pontosComputador2)
+        print("Obrigada por jogar nosso Jokenpo!")
+        print("Agradecimento de Alana, Brenda, Laura e Letícia")
+        break
