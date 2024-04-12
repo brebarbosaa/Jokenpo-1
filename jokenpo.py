@@ -1,27 +1,26 @@
 import random
-##menu
-print("1, 2, 3, 4")
-escolha = input("escolha: ")
+############################### MODO HUMANOxCOMPUTADOR ##################################################
+while True:
+    
+    print("Bem vindo(a) ao jogo digital de Jokenpô!")
+    escolha = print("Nesse jogo, você pode jogar de três modos: HUMANOxHUMANO, HUMANOxCOMPUTADOR, COMPUTADORxCOMPUTADOR")
+    escolha1 = print("1. HUMANOxHUMANO")
+    escolha2 = print("2. HUMANOxCOMPUTADOR")
+    escolha3 = print("3. COMPUTADORxCOMPUTADOR")
+    
+    opcao = print(input("Escolha seu modo: "))
 
-##humano vs humano
-while escolha == '1':
-    jogada1 = input("pedra papel ou tesoura?: ").lower()
+    while opcao == '1':
+        jogada1 = input("pedra papel ou tesoura?: ").lower()
 
-    if jogada1 == "pedra" or "papel" or "tesoura":
-        jogada2 = input("pedra papel ou tesoura?: ").lower()
+        if jogada1 == "pedra" or "papel" or "tesoura":
+            jogada2 = input("pedra papel ou tesoura?: ").lower()
 
         if jogada1 == "pedra" and jogada2 == "papel":
                 print("jogador 1 ganhou! ")
-
-############################### MODO HUMANOxCOMPUTADOR ##################################################
-import random
-
-print("Bem vindo(a) ao jogo digital de Jokenpô!")
-escolha = print("Nesse jogo, você pode jogar de três modos: HUMANOxHUMANO, HUMANOxCOMPUTADOR, COMPUTADORxCOMPUTADOR")
-escolha1 = print("1. HUMANOxHUMANO")
-escolha2 = print("2. HUMANOxCOMPUTADOR")
-escolha3 = print("3. COMPUTADORxCOMPUTADOR")
-print(input("Escolha seu modo:"))
+                
+        elif jogada1 == "pedra" or "papel" or "tesoura":
+             jogada2 = input("pedra papel ou tesoura? ").lower()
 
 ###### MODO 2 (HUMANOxCOMPUTADOR)
 while escolha == escolha2:
