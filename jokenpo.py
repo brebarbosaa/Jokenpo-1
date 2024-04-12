@@ -22,6 +22,17 @@ while True:
         elif jogada1 == "pedra" or "papel" or "tesoura":
              jogada2 = input("pedra papel ou tesoura? ").lower()
 
+#############################################HUMANOvsHUMANO 2#############
+while escolha == '1':
+    jogada1 = input("Jogador 1: pedra, papel ou tesoura?: ").lower()
+    jogada2 = input("Jogador 2: pedra, papel ou tesoura?: ").lower()
+    if jogada1 == jogada2:
+        print("Empate :(")
+    elif (jogada1 == "pedra" and jogada2 == "tesoura") or (jogada1 == "papel" and jogada2 == "pedra") or (jogada1 == "tesoura" and jogada2 == "papel"):
+        print("jogador 1 ganhou!")
+    else:
+        print("jogador 2 ganhou!")
+
 ###### MODO 2 (HUMANOxCOMPUTADOR)
 while escolha == escolha2:
         print("1. Pedra")
