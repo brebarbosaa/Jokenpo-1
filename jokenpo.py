@@ -22,19 +22,44 @@ while True:
                         print("jogador 2 ganhou!")
 
 ####### MODO 2 HUMANOxCOMPUTADOR ###################################################################################
+        placar2Jogador = 0
+        placar2Computador = 0
         while opcao == "2":
                 print("1. Pedra")
                 print("2. Papel")
                 print("3. Tesoura")
                 jogador = int(input("Digite o número de sua jogada: "))
                 computador = random.randint(1,3)
-                print(f"o computador jogou: {computador}")
+
+                if computador == 1:
+                        print("o computador jogou: Pedra")
+                if computador == 2:
+                        print("o computador jogou: Papel")
+                if computador == 3:
+                        print("o computador jogou: Tesoura")
                 if jogador == computador:
                         print("Empate!")
                 elif (jogador == 1 and computador == 3) or (jogador == 2 and computador == 1) or (jogador == 3 and computador ==2):
                         print("Você venceu!!")
+                        placar2Jogador += 1
                 else:
                         print("Você perdeu!")
+                        placar2Computador += 1
+                ##### perguntar se o usuario deseja continuar 
+                        continuar2 = input("Voce deseja continuar a jogar? ")
+                        if continuar2 == "Sim" or continuar2 == "sim":
+                                continue
+                        elif continuar2 == "nao":
+                                print("Obrigada por jogar nosso Jokenpo!")
+                        placar2 = input("Deseja ver o placar do jogo? ")
+                        if placar2 == "Sim" or placar2 == "sim":
+                                print("Placar")
+                                print("Jogador:", placar2Jogador)
+                                print("Computador 2:", placar2Computador)
+                                print("Obrigada por jogar nosso Jokenpo!")
+                                print("Agradecimento de Alana, Brenda, Laura e Letícia")
+                                break
+
 
 ######################### MODO 3 COMPUTADOR X COMPUTADOR ############################################################
         pontosComputador1 = 0
