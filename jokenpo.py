@@ -9,17 +9,39 @@ while True:
         print("2. HUMANOxCOMPUTADOR")
         print("3. COMPUTADORxCOMPUTADOR")
         opcao = (input("Escolha seu modo: "))
+        opcoes = ("pedra", "papel", "tesoura")
 
 ####### MODO 1: HUMANOvsHUMANO ###################################################################################
+        placar1Jogador1 = 0
+        placar1Jogador2 = 0
         while opcao == '1':
-                jogada1 = input("Jogador 1: pedra, papel ou tesoura?: ")
-                jogada2 = input("Jogador 2: pedra, papel ou tesoura?: ")
-                if jogada1 == jogada2:
+                jogada1 = input("Jogador 1: pedra, papel ou tesoura?: ").lower()
+                jogada2 = input("Jogador 2: pedra, papel ou tesoura?: ").lower()
+                if jogada1 or jogada2 not in opcoes:
+                        print("insira uma opção válida")
+                        break
+                elif jogada1 == jogada2:
                         print("Empate :(")
                 elif (jogada1 == "1" and jogada2 == "3") or (jogada1 == "2" and jogada2 == "1") or (jogada1 == "3" and jogada2 == "2"):
                         print("jogador 1 ganhou!")
+                        placar1Jogador1 += 1
                 else:
                         print("jogador 2 ganhou!")
+                        placar1Jogador2 += 1
+                ## perguntar se deseja continuar a jogar e mostrar o placar
+                continuar1 = input("Voce deseja continuar a jogar? ").lower()
+                if continuar1 == "sim":
+                        continue
+                elif continuar1 == "nao":
+                                print("Obrigada por jogar nosso Jokenpo!")
+                placar1 = input("Deseja ver o placar do jogo? ").lower()
+                if placar1 == "Sim" or placar1 == "sim":
+                        print("Placar")
+                        print("Jogador 1:", placar1Jogador1)
+                        print("Jogador 2:", placar1Jogador2)
+                        print("Obrigada por jogar nosso Jokenpo!")
+                        print("Agradecimento de Alana, Brenda, Laura e Letícia")
+                        break
 
 ####### MODO 2 HUMANOxCOMPUTADOR ###################################################################################
         placar2Jogador = 0
@@ -60,7 +82,6 @@ while True:
                                 print("Agradecimento de Alana, Brenda, Laura e Letícia")
                                 break
 
-
 ######################### MODO 3 COMPUTADOR X COMPUTADOR ############################################################
         pontosComputador1 = 0
         pontosComputador2 = 0
@@ -92,10 +113,10 @@ while True:
                 else:
                         print("Computador 2 ganhou")
                         pontosComputador2 += 1
-                        continuar = input("Voce deseja continuar a jogar? ")
-                        if continuar == "Sim" or continuar == "sim":
+                        continuar3 = input("Voce deseja continuar a jogar? ")
+                        if continuar3 == "Sim" or continuar3 == "sim":
                                 continue
-                        elif continuar == "nao":
+                        elif continuar3 == "nao":
                                 print("Obrigada por jogar nosso Jokenpo!")
                         placar = input("Deseja ver o placar do jogo? ")
                         if placar == "Sim" or placar == "sim":
