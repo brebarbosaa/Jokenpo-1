@@ -60,14 +60,13 @@ while True:
                         print("Obrigada por jogar nosso Jokenpô!")
                 placar1 = input("Deseja ver o placar do jogo? ").lower()
                 if placar1 == "não" or placar1 == "nao":
-                        print("Obrigada por jogar nosso Jokenpo!")
                         break
                 elif placar1 == "Sim" or placar1 == "sim":
-                        print("Placar")
+                        print("Placar: \n")
                         print("Jogador 1:", placar1Jogador1)
-                        print("Jogador 2:", placar1Jogador2)
+                        print(f"Jogador 2: {placar1Jogador2} \n")
                         print("Obrigada por jogar nosso Jokenpo!")
-                        print("Agradecimento de Alana, Brenda, Laura e Letícia")
+                        print("Agradecimento de Alana, Brenda, Laura e Leticia \n")
                         break
 
 ####### MODO 2 HUMANOxCOMPUTADOR ###################################################################################
@@ -104,17 +103,16 @@ while True:
                 if continuar2 == "Sim" or continuar2 == "sim":
                         continue
                 elif continuar2 == "nao" or continuar2 == "não":
-                                print("Obrigada por jogar nosso Jokenpo!")
+                        print("Obrigada por jogar nosso Jokenpo!")
                 placar2 = input("Deseja ver o placar do jogo? ")
                 if placar2 == "não":
-                        print("Obrigada por jogar nosso Jokenpo!")
                         break
                 elif placar2 == "Sim" or placar2 == "sim":
-                        print("Placar \n")
+                        print("Placar: \n")
                         print("Jogador:", placar2Jogador)
                         print(f"Computador: {placar2Computador} \n" )
                         print("Obrigada por jogar nosso Jokenpo!")
-                        print("Agradecimento de Alana, Brenda, Laura e Letícia \n")
+                        print("Agradecimento de Alana, Brenda, Laura e Leticia \n")
                         break
 
 ######################### MODO 3 COMPUTADOR X COMPUTADOR ############################################################
@@ -149,6 +147,7 @@ while True:
                 else:
                         print("Computador 2 ganhou!")
                         pontosComputador2 += 1
+                ## perguntar se o jogador deseja continuar, e mostrar o placar
                 continuar3 = input("Voce deseja continuar a jogar? ").lower()
                 if continuar3 == "Sim" or continuar3 == "sim":
                         continue
@@ -156,12 +155,11 @@ while True:
                         print("Obrigada por jogar nosso Jokenpo!")
                 placar = input("Deseja ver o placar do jogo? ")
                 if placar == "nao" or placar == "não":
-                        print("Obrigada por jogar nosso Jokenpo!")
                         break
                 elif placar == "Sim" or placar == "sim":
-                        print("Placar:")
+                        print("Placar: \n")
                         print("Computador 1:", pontosComputador1)
-                        print("Computador 2:", pontosComputador2)
+                        print(f"Computador 2: {pontosComputador2} \n")
                         print("Obrigada por jogar nosso Jokenpo!")
-                        print("Agradecimento de Alana, Brenda, Laura e Letícia")
+                        print("Agradecimento de Alana, Brenda, Laura e Leticia \n")
                         break
