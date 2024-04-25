@@ -62,9 +62,10 @@ while True:
                 if placar1 == "não" or placar1 == "nao":
                         break
                 elif placar1 == "Sim" or placar1 == "sim":
+                        print(".・。.・゜✭・.・✫・゜・。.")
                         print("Placar: \n")
                         print("Jogador 1:", placar1Jogador1)
-                        print(f"Jogador 2: {placar1Jogador2} \n")
+                        print(f"Jogador 2: {placar1Jogador2}\n")
                         print("Obrigada por jogar nosso Jokenpo!")
                         print("Agradecimento de Alana, Brenda, Laura e Leticia \n")
                         print('''´´´´´´´´´´´´´´´´´´´´´´¶¶¶¶¶¶¶¶¶
@@ -126,6 +127,7 @@ while True:
                 if placar2 == "não" or placar2 == "nao":
                         break
                 elif placar2 == "Sim" or placar2 == "sim":
+                        print(".・。.・゜✭・.・✫・゜・。.")
                         print("Placar: \n")
                         print("Jogador:", placar2Jogador)
                         print(f"Computador: {placar2Computador} \n" )
@@ -193,6 +195,7 @@ while True:
                 if placar == "nao" or placar == "não":
                         break
                 elif placar == "Sim" or placar == "sim":
+                        print(".・。.・゜✭・.・✫・゜・。.")
                         print("Placar: \n")
                         print("Computador 1:", pontosComputador1)
                         print(f"Computador 2: {pontosComputador2} \n")
