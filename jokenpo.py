@@ -67,6 +67,24 @@ while True:
                         print(f"Jogador 2: {placar1Jogador2} \n")
                         print("Obrigada por jogar nosso Jokenpo!")
                         print("Agradecimento de Alana, Brenda, Laura e Leticia \n")
+                        print('''´´´´´´´´´´´´´´´´´´´´´´¶¶¶¶¶¶¶¶¶
+´´´´´´´´´´´´´´´´´´´´¶¶´´´´´´´´´´¶¶
+´´´´´´¶¶¶¶¶´´´´´´´¶¶´´´´´´´´´´´´´´¶¶
+´´´´´¶´´´´´¶´´´´¶¶´´´´´¶¶´´´´¶¶´´´´´¶¶
+´´´´´¶´´´´´¶´´´¶¶´´´´´´¶¶´´´´¶¶´´´´´´´¶¶
+´´´´´¶´´´´¶´´¶¶´´´´´´´´¶¶´´´´¶¶´´´´´´´´¶¶
+´´´´´´¶´´´¶´´´¶´´´´´´´´´´´´´´´´´´´´´´´´´¶¶
+´´´´¶¶¶¶¶¶¶¶¶¶¶¶´´´´´´´´´´´´´´´´´´´´´´´´¶¶
+´´´¶´´´´´´´´´´´´¶´¶¶´´´´´´´´´´´´´¶¶´´´´´¶¶
+´´¶¶´´´´´´´´´´´´¶´´¶¶´´´´´´´´´´´´¶¶´´´´´¶¶
+´¶¶´´´¶¶¶¶¶¶¶¶¶¶¶´´´´¶¶´´´´´´´´¶¶´´´´´´´¶¶
+´¶´´´´´´´´´´´´´´´¶´´´´´¶¶¶¶¶¶¶´´´´´´´´´¶¶
+´¶¶´´´´´´´´´´´´´´¶´´´´´´´´´´´´´´´´´´´´¶¶
+´´¶´´´¶¶¶¶¶¶¶¶¶¶¶¶´´´´´´´´´´´´´´´´´´´¶¶
+´´¶¶´´´´´´´´´´´¶´´¶¶´´´´´´´´´´´´´´´´¶¶
+´´´¶¶¶¶¶¶¶¶¶¶¶¶´´´´´¶¶´´´´´´´´´´´´¶¶
+´´´´´´´´´´´´´´´´´´´´´´´¶¶¶¶¶¶¶¶¶¶¶
+''')
                         break
 
 ####### MODO 2 HUMANOxCOMPUTADOR ###################################################################################
@@ -85,11 +103,11 @@ while True:
                 computador = random.randint(1,3)
 
                 if computador == 1:
-                        print("o computador jogou: Pedra")
+                        print("o computador jogou: Pedra ")
                 if computador == 2:
-                        print("o computador jogou: Papel")
+                        print("o computador jogou: Papel ")
                 if computador == 3:
-                        print("o computador jogou: Tesoura")
+                        print("o computador jogou: Tesoura ")
                 if jogador == computador:
                         print("Empate!")
                 elif (jogador == 1 and computador == 3) or (jogador == 2 and computador == 1) or (jogador == 3 and computador == 2):
@@ -99,13 +117,13 @@ while True:
                         print("Você perdeu!")
                         placar2Computador += 1
                 ##### perguntar se o usuario deseja continuar 
-                continuar2 = input("Voce deseja continuar a jogar? ")
-                if continuar2 == "Sim" or continuar2 == "sim":
+                continuar2 = input("Voce deseja continuar a jogar? ").lower()
+                if continuar2 == "Sim":
                         continue
                 elif continuar2 == "nao" or continuar2 == "não":
                         print("Obrigada por jogar nosso Jokenpo!")
-                placar2 = input("Deseja ver o placar do jogo? ")
-                if placar2 == "não":
+                placar2 = input("Deseja ver o placar do jogo? ").lower()
+                if placar2 == "não" or placar2 == "nao":
                         break
                 elif placar2 == "Sim" or placar2 == "sim":
                         print("Placar: \n")
@@ -113,6 +131,24 @@ while True:
                         print(f"Computador: {placar2Computador} \n" )
                         print("Obrigada por jogar nosso Jokenpo!")
                         print("Agradecimento de Alana, Brenda, Laura e Leticia \n")
+                        print('''´´´´´´´´´´´´´´´´´´´´´´¶¶¶¶¶¶¶¶¶
+´´´´´´´´´´´´´´´´´´´´¶¶´´´´´´´´´´¶¶
+´´´´´´¶¶¶¶¶´´´´´´´¶¶´´´´´´´´´´´´´´¶¶
+´´´´´¶´´´´´¶´´´´¶¶´´´´´¶¶´´´´¶¶´´´´´¶¶
+´´´´´¶´´´´´¶´´´¶¶´´´´´´¶¶´´´´¶¶´´´´´´´¶¶
+´´´´´¶´´´´¶´´¶¶´´´´´´´´¶¶´´´´¶¶´´´´´´´´¶¶
+´´´´´´¶´´´¶´´´¶´´´´´´´´´´´´´´´´´´´´´´´´´¶¶
+´´´´¶¶¶¶¶¶¶¶¶¶¶¶´´´´´´´´´´´´´´´´´´´´´´´´¶¶
+´´´¶´´´´´´´´´´´´¶´¶¶´´´´´´´´´´´´´¶¶´´´´´¶¶
+´´¶¶´´´´´´´´´´´´¶´´¶¶´´´´´´´´´´´´¶¶´´´´´¶¶
+´¶¶´´´¶¶¶¶¶¶¶¶¶¶¶´´´´¶¶´´´´´´´´¶¶´´´´´´´¶¶
+´¶´´´´´´´´´´´´´´´¶´´´´´¶¶¶¶¶¶¶´´´´´´´´´¶¶
+´¶¶´´´´´´´´´´´´´´¶´´´´´´´´´´´´´´´´´´´´¶¶
+´´¶´´´¶¶¶¶¶¶¶¶¶¶¶¶´´´´´´´´´´´´´´´´´´´¶¶
+´´¶¶´´´´´´´´´´´¶´´¶¶´´´´´´´´´´´´´´´´¶¶
+´´´¶¶¶¶¶¶¶¶¶¶¶¶´´´´´¶¶´´´´´´´´´´´´¶¶
+´´´´´´´´´´´´´´´´´´´´´´´¶¶¶¶¶¶¶¶¶¶¶
+''')
                         break
 
 ######################### MODO 3 COMPUTADOR X COMPUTADOR ############################################################
@@ -153,7 +189,7 @@ while True:
                         continue
                 elif continuar3 == "nao" or continuar3 == "não":
                         print("Obrigada por jogar nosso Jokenpo!")
-                placar = input("Deseja ver o placar do jogo? ")
+                placar = input("Deseja ver o placar do jogo? ").lower()
                 if placar == "nao" or placar == "não":
                         break
                 elif placar == "Sim" or placar == "sim":
@@ -162,4 +198,22 @@ while True:
                         print(f"Computador 2: {pontosComputador2} \n")
                         print("Obrigada por jogar nosso Jokenpo!")
                         print("Agradecimento de Alana, Brenda, Laura e Leticia \n")
+                        print('''´´´´´´´´´´´´´´´´´´´´´´¶¶¶¶¶¶¶¶¶
+´´´´´´´´´´´´´´´´´´´´¶¶´´´´´´´´´´¶¶
+´´´´´´¶¶¶¶¶´´´´´´´¶¶´´´´´´´´´´´´´´¶¶
+´´´´´¶´´´´´¶´´´´¶¶´´´´´¶¶´´´´¶¶´´´´´¶¶
+´´´´´¶´´´´´¶´´´¶¶´´´´´´¶¶´´´´¶¶´´´´´´´¶¶
+´´´´´¶´´´´¶´´¶¶´´´´´´´´¶¶´´´´¶¶´´´´´´´´¶¶
+´´´´´´¶´´´¶´´´¶´´´´´´´´´´´´´´´´´´´´´´´´´¶¶
+´´´´¶¶¶¶¶¶¶¶¶¶¶¶´´´´´´´´´´´´´´´´´´´´´´´´¶¶
+´´´¶´´´´´´´´´´´´¶´¶¶´´´´´´´´´´´´´¶¶´´´´´¶¶
+´´¶¶´´´´´´´´´´´´¶´´¶¶´´´´´´´´´´´´¶¶´´´´´¶¶
+´¶¶´´´¶¶¶¶¶¶¶¶¶¶¶´´´´¶¶´´´´´´´´¶¶´´´´´´´¶¶
+´¶´´´´´´´´´´´´´´´¶´´´´´¶¶¶¶¶¶¶´´´´´´´´´¶¶
+´¶¶´´´´´´´´´´´´´´¶´´´´´´´´´´´´´´´´´´´´¶¶
+´´¶´´´¶¶¶¶¶¶¶¶¶¶¶¶´´´´´´´´´´´´´´´´´´´¶¶
+´´¶¶´´´´´´´´´´´¶´´¶¶´´´´´´´´´´´´´´´´¶¶
+´´´¶¶¶¶¶¶¶¶¶¶¶¶´´´´´¶¶´´´´´´´´´´´´¶¶
+´´´´´´´´´´´´´´´´´´´´´´´¶¶¶¶¶¶¶¶¶¶¶
+''')
                         break
